@@ -1,0 +1,959 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(241, 231, 231, 0.5);
+}
+
+p {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "patua-one", Arial, Helvetica, sans-serif;
+}
+
+/* font
+
+heebo untuk paragraf dan beberapa kata
+
+patua one untuk judul */
+
+/* header start */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/hero-img.jpg);
+  background-size: cover;
+  /* background-position-y: top; */
+}
+
+/* navbar in header start */
+nav {
+  display: flex;
+  padding: 1.9em 1em;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav ul .name-page {
+  text-align: center;
+  flex: 2;
+}
+
+.name-page a {
+  display: inline;
+  color: rgb(75, 75, 230);
+  text-decoration: none;
+}
+
+nav ul .center {
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+}
+
+nav ul select {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(117, 114, 114);
+}
+
+ul .right li a {
+  background-color: rgb(75, 75, 230);
+  padding: 0.5em 1.5em;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+}
+
+ul .right {
+  display: flex;
+  flex: 2;
+  justify-content: space-evenly;
+}
+/* navbar in header end */
+
+/* contemt in header start */
+header section {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  font-size: 1.2rem;
+  column-gap: 1.3em;
+  padding: 1em 3em;
+}
+
+section .section-header-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3em;
+  flex: 1;
+  color: rgb(75, 73, 73);
+  /* background-color: coral; */
+}
+
+section .section-header-right {
+  box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  padding: 1.2em;
+  box-sizing: border-box;
+}
+
+section .section-header-left h1 {
+  font-size: 3.5rem;
+}
+
+section .section-header-left p {
+  width: 80%;
+}
+
+section .section-header-left span.contact-us {
+  /* width: calc(6em + 4); */
+  background-color: rgb(75, 75, 230);
+  border-radius: 50px;
+}
+
+.section-header-left span.contact-us a {
+  color: rgb(255, 255, 255);
+}
+
+section .section-header-left span a {
+  display: block;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  text-align: center;
+}
+
+section .section-header-left .learn-more {
+  /* width: 100px; */
+  border: 2px solid rgb(75, 75, 230);
+  border-radius: 50px;
+}
+
+section .section-header-right {
+  flex: 1;
+}
+
+.section-header-right .profile img {
+  display: block;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.section-header-right span {
+  display: block;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+}
+
+.button {
+  display: none;
+}
+/* contemt in header end */
+/* header end */
+
+/* main start */
+/* about us in main start */
+.about-us {
+  margin: 4em;
+}
+.about-us section {
+  padding: 3em;
+  /* background-color: chocolate; */
+}
+
+.about-us section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: center;
+  gap: 3em;
+  text-align: center;
+}
+
+.about-us section h3 {
+  margin: 1em 0;
+}
+/* about us in main end */
+
+/* journey in main start */
+.journey {
+  max-width: 900px;
+  background-color: rgb(75, 75, 230);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  margin: auto;
+  padding: 5.5em;
+  box-sizing: border-box;
+}
+
+.journey h1 {
+  font-size: 3.5rem;
+}
+
+.journey section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  row-gap: 3em;
+  justify-content: space-evenly;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.journey section span p {
+  /* width: 75%; */
+  font-size: 1.3rem;
+}
+/* journey in main end */
+
+/* Feature in main start */
+.feature .section-feature-top {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 5em 0;
+}
+
+.feature .section-feature-top h1 {
+  font-size: 3.5rem;
+}
+
+.feature .section-feature-top p {
+  /* width: 35%; */
+  margin: auto;
+  margin-top: 1em;
+}
+
+.feature .section-feature-bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  justify-content: center;
+  gap: 3em;
+  text-align: center;
+}
+
+.feature .section-feature-bottom h3 {
+  font-size: 1.4rem;
+  margin: 1.5em 0;
+}
+
+.feature .section-feature-bottom img {
+  display: block;
+  margin: auto;
+}
+
+.feature span {
+  display: block;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.feature span a {
+  color: rgb(75, 75, 230);
+}
+
+.feature span a::after {
+  display: inline-block;
+  content: ">";
+  text-decoration: none;
+  margin-left: 0.5em;
+  color: rgb(75, 75, 230);
+}
+/* Feature in main end */
+
+/* servoce in main start */
+
+.services .section-services-top {
+  text-align: center;
+  margin: 6em 0;
+}
+
+.services .section-services-top h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5em;
+}
+
+.services .section-services-top p {
+  /* width: 50%; */
+  margin: auto;
+  font-size: 1.3rem;
+  line-height: 35px;
+}
+
+.services .section-services-center,
+.section-services-bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  justify-content: center;
+  gap: 3em;
+  padding: 0 11em;
+}
+
+.section-services-bottom {
+  /* display: flex; */
+  justify-content: end;
+  margin-top: 3em;
+  /* width: 50%; */
+}
+
+.section-services-center section,
+.section-services-bottom section {
+  display: flex;
+  gap: 1.5em;
+}
+
+/* service in main end */
+
+/* projects in main start */
+.projects .section-projects-top {
+  text-align: center;
+  margin-top: 10em;
+}
+
+.projects .section-projects-top h1 {
+  font-size: 3rem;
+}
+
+.section-projects-top .choose-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 3em;
+}
+
+.section-projects-top .choose-project span a {
+  padding: 0.7em 2em;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: rgba(200, 200, 200, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section-projects-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 7em 0;
+}
+
+.projects-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(200, 200, 200, 0.5);
+  cursor: pointer;
+}
+
+.section-projects-bottom a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.section-projects-bottom p {
+  width: 100%;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.section-projects-bottom .projects-image.quarter {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/1.jpg);
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.section-projects-bottom .projects-image.hotelmenia {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/2.jpg);
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.section-projects-bottom .projects-image.furnishop {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/3.jpg);
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.section-projects-bottom .projects-image.thrive {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/4.jpg);
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.section-projects-bottom .projects-image.randomone {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/5.jpg);
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.section-projects-bottom .projects-image.randomtwo {
+  width: 300px;
+  height: 200px;
+  background-image: url(img/6.jpg);
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.clickImage {
+  display: block;
+  width: 500px;
+  height: 500px;
+  z-index: 2;
+}
+
+/* projects in main end */
+
+/* testimonials in main start */
+.section-testimonials-top h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.testimonials .section-testimonials-top h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+/* slideshow testimonials */
+/* testimonials */
+.testimonials {
+  width: 800px;
+  overflow: hidden;
+  margin: 4em auto 10em auto;
+}
+
+.testimonial {
+  width: 500%;
+  display: flex;
+}
+
+.testimonials h2 {
+  text-align: center;
+}
+
+.testimonials p {
+  text-align: center;
+  width: 750px;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+}
+
+.testimonial-satu,
+.testimonial-dua,
+.testimonial-tiga,
+.testimonial-empat {
+  display: grid;
+  row-gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* testimonials button for slideshow */
+.testimonial input {
+  display: none;
+}
+
+.testimonial-satu,
+.testimonial-dua,
+.testimonial-tiga,
+.testimonial-empat {
+  width: 20%;
+  transition: 2s;
+}
+
+.testimonial-satu img {
+  border-radius: 50%;
+}
+
+.testimonial-dua img {
+  border-radius: 50%;
+}
+
+.testimonial-tiga img {
+  border-radius: 50%;
+}
+
+.testimonial-empat img {
+  border-radius: 50%;
+}
+
+/* manual button navigation testimonials */
+.navmanual-testi {
+  position: absolute;
+  width: 800px;
+  margin-top: 400px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 500px;
+}
+
+.navmanual-testi .manual-testi {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-testi:not(:last-child) {
+  margin-right: 20px;
+}
+
+.manual-testi:hover {
+  background-color: rgb(75, 75, 230);
+}
+/* ketika di klick berfungsi untuk gambar bisa berpindah dari satu gambar ke gambar lainnya  */
+.testimonial input#testi1:checked ~ .pertama {
+  margin-left: 0;
+}
+.testimonial input#testi2:checked ~ .pertama {
+  margin-left: -20%;
+}
+.testimonial input#testi3:checked ~ .pertama {
+  margin-left: -40%;
+}
+.testimonial input#testi4:checked ~ .pertama {
+  margin-left: -60%;
+}
+/* untuk ketika di klick background dari button / tombol navigasi berubah jadi warna orange */
+#testi1:checked ~ .navmanual-testi .manual-btn1 {
+  background-color: rgb(75, 75, 230);
+}
+#testi2:checked ~ .navmanual-testi .manual-btn2 {
+  background-color: rgb(75, 75, 230);
+}
+#testi3:checked ~ .navmanual-testi .manual-btn3 {
+  background-color: rgb(75, 75, 230);
+}
+#testi4:checked ~ .navmanual-testi .manual-btn4 {
+  background-color: rgb(75, 75, 230);
+}
+
+/* slideshow testimonials end*/
+/* testimonials in main end */
+
+/* agents in main start */
+
+.agents .section-agent-top {
+  text-align: center;
+}
+
+.agents .section-agent-top h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.agents .section-agents-card {
+  display: flex;
+  flex-wrap: wrap;
+  /* overflow-y: scroll; */
+  justify-content: center;
+  margin: 4em auto;
+  align-items: baseline;
+  gap: 2em;
+}
+
+.agents .section-agents-card .agent {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  padding: 3em;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+.section-agents-card .agent .star-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-agents-card .agent span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+.section-agents-card .agent img.agent-image {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.section-agents-card .agent h2,
+h5,
+p,
+a {
+  display: block;
+  text-align: center;
+}
+
+.section-agents-card .agent h5 {
+  margin-bottom: 1.5em;
+}
+
+.section-agents-card .agent h2 {
+  margin-top: 1.5em;
+}
+
+.section-agents-card .agent a {
+  color: rgb(75, 75, 230);
+  text-decoration: none;
+}
+/* agents in main end */
+/* main end */
+
+/* footer start */
+footer {
+  background-color: rgb(75, 75, 230);
+  color: white;
+  padding: 7em 0 0 0;
+}
+
+footer .section-footer-top {
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer .section-footer-top span a {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 1em 2em;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 2.5em;
+}
+
+footer .section-footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 2em 5em; */
+  justify-content: center;
+  margin-top: 5em;
+}
+
+footer .section-footer-bottom aside > * {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1.5em;
+}
+
+footer .section-footer-bottom a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer .section-footer-bottom .title-footer {
+  flex: 1.5;
+}
+
+footer .section-footer-bottom aside {
+  flex: 1;
+}
+
+footer span {
+  display: block;
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* footer end
+
+/* responsif breakpoints */
+
+/* layar 1024px */
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 780px) {
+  /* navbar responsif start */
+
+  nav ul {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: rgba(200, 200, 200, 0.9);
+    padding: 2em 0;
+    transform: translateY(-100%);
+  }
+
+  nav ul .center,
+  nav ul .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul .center select,
+  nav ul .right select {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .menu {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/humburger-menu.png);
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 6;
+    cursor: pointer;
+  }
+
+  nav ul.open-menu {
+    transform: translateY(0);
+    transition: 1s;
+  }
+
+  .menu.close-menu {
+    background-image: url(img/close-menu.png);
+    transition: 0.3s;
+  }
+
+  /* navbar responsif end */
+
+  /* header responsif start */
+
+  header {
+    padding: 0;
+  }
+
+  header section {
+    display: block;
+    position: relative;
+    padding: 0;
+  }
+
+  header .section-header-left {
+    /* margin: auto; */
+    z-index: 2;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.8);
+    padding: 1em 2em;
+    border-radius: 20px;
+  }
+
+  section .section-header-left p {
+    width: 100%;
+  }
+
+  section .section-header-left span {
+    margin: auto;
+  }
+
+  header .section-header-right {
+    width: 80%;
+    height: 80vh;
+    display: none;
+    margin: auto;
+    z-index: 1;
+    padding: 1.5em;
+    box-sizing: border-box;
+  }
+
+  .section-header-right.add-Profile {
+    display: block;
+  }
+
+  .button {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 95%;
+    left: 43%;
+    cursor: pointer;
+    background-color: rgba(200, 200, 200, 0.8);
+    border-radius: 50%;
+  }
+
+  .replace-card-element {
+    opacity: 0;
+    transform: scale(-20%);
+    transition: 1s;
+  }
+
+  .replace-card-element2 {
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+  /* header responsif end */
+
+  /* journey in main responsif start */
+  .journey {
+    padding: 2.5em;
+  }
+
+  .journey h1 {
+    font-size: 2.5rem;
+  }
+  /* journey in main responsif end */
+
+  /* service in main responsif start */
+
+  .section-services-center,
+  .section-services-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-services-bottom {
+    display: grid;
+    justify-content: center;
+  }
+
+  .section-services-center section,
+  .section-services-bottom section {
+    display: flex;
+    gap: 1.5em;
+  }
+
+  /* service in main responsif end */
+
+  /* testimonial in main responsif start */
+  .testimonials {
+    width: 80%;
+  }
+
+  .testimonials p {
+    width: 80%;
+  }
+
+  .testimonial {
+    height: 450px;
+    row-gap: 3em;
+    /* width: 500%; */
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .navmanual-testi {
+    display: none;
+  }
+  /* testimonial in main responsif end */
+
+  /* footer responsif start */
+  .section-footer-top h1 {
+    font-size: 2.5rem;
+  }
+  /* footer responsif end */
+}
+
+@media screen and (max-width: 600px) {
+  header .section-header-left h1,
+  .feature .section-feature-top h1,
+  .services .section-services-top h1,
+  .section-testimonials-top h1,
+  .projects .section-projects-top h1,
+  .agents .section-agent-top h1,
+  .section-footer-top h1 {
+    font-size: 2rem;
+  }
+
+  header .section-header-right {
+    width: 90%;
+    /* max-height: 350px; */
+    height: 80vh;
+    display: none;
+    margin: auto;
+    z-index: 1;
+    padding: 1.5em;
+    box-sizing: border-box;
+  }
+
+  .section-header-right.add-Profile {
+    display: block;
+  }
+
+  .replace-card-element {
+    opacity: 0;
+    transform: translate(-100px);
+    transition: 1s;
+  }
+
+  .replace-card-element2 {
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  /* 
+  .button {
+    top: 120%;
+  } */
+  .about-us section h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-us section p {
+    font-size: 1.3rem;
+  }
+
+  footer .section-footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 2.5em;
+  }
+
+  footer .section-footer-bottom aside h4 {
+    font-size: 1.5rem;
+  }
+  footer .section-footer-bottom aside p a {
+    display: inline-block;
+    font-size: 1.2rem;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .section-header-left {
+    top: 0px;
+  }
+
+  .button {
+    top: 460px;
+  }
+}
+
+/* membuat glass card transparan untuk section right atau section bagian kanan di bagian header */
+
+/* membuat hover pada image project */
